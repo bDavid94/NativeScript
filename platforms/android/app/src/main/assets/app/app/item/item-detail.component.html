@@ -1,0 +1,19 @@
+<ActionBar title="Details" class="action-bar">
+    <NavigationButton text="Back" (tap)="goBack()" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+<FlexboxLayout flexDirection="column" class="page">
+    <FlexboxLayout class="m-15">
+        <Label class="h1" [text]="item.id + '. '"></Label>
+        <Label class="h1" [text]="item.name"></Label>
+    </FlexboxLayout>
+    <StackLayout orientation="horizontal">
+        <Label class="h3 role" [text]="'Role: ' + item.role" width="50%" *ngIf="!editMode"></Label>
+        <TextField *ngIf="editMode" width="50%" [text]="item.role" [(ngModel)]="item.role"></TextField>
+        <Button *ngIf="!editMode" text="Edit" width="15%" height="40" color="green" textAlignment="center" verticalAlignment="center"
+        (tap)="edit()"></Button>
+        <Button *ngIf="editMode" text="Save" width="25%" height="40" color="green" textAlignment="center" verticalAlignment="center"
+        (tap)="save()"></Button>
+        <Button *ngIf="editMode" text="Cancel" width="25%" height="40" color="red" textAlignment="center" verticalAlignment="center"
+        (tap)="cancel()"></Button>
+    </StackLayout>
+</FlexboxLayout>

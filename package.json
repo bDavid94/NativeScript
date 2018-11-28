@@ -1,9 +1,6 @@
 {
   "nativescript": {
     "id": "org.nativescript.nativescsriptProj",
-    "tns-android": {
-      "version": "5.0.0"
-    },
     "tns-ios": {
       "version": "5.0.0"
     }

@@ -1,0 +1,13 @@
+<GridLayout class="page">
+    <ListView [items]="items" class="list-group">
+            <ng-template let-item="item">
+                <StackLayout orientation="horizontal">
+                    <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                        class="list-group-item" width="90%" horizontalAlignment="left">
+                    </Label>
+                    <Button text="X" (tap)="delete(item.id)" width="10%"
+                    backgroundColor="#db536c" color="white" horizontalAlignment="right"></Button>
+                </StackLayout>
+            </ng-template>
+    </ListView>
+</GridLayout>

@@ -1,0 +1,6 @@
+Button {
+    cursor: pointer;
+}
+.btn-available {
+    background-color: green;
+}

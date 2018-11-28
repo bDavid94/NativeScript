@@ -1,0 +1,5 @@
+<StackLayout class="page">
+    <TextField hint="Name" [(ngModel)]="name" class="field1 field"></TextField>
+    <TextField hint="Role" [(ngModel)]="role" class="field2 field"></TextField>
+    <Button class="myButton" text="Save" color="white" (tap)="name !== '' && role !== '' && save()" [ngClass]="{'btn-available' : name !== '' && role !== ''}"></Button>
+</StackLayout>

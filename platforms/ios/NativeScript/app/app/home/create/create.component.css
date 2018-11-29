@@ -14,7 +14,7 @@ Button {
     border-radius: 5;
 }
 .page{
-    margin-top: 40%;
+    margin-top: 20%;
     display: flex;
     flex-direction: row;
 }
@@ -25,6 +25,8 @@ Button {
     margin-bottom: 20;
 }
 .field{
+    height: 50;
+    font-size: 20;    
     width: 80%;
     border-left-color: peru;
     border-right-color: peru;

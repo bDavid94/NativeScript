@@ -9,6 +9,8 @@ import { TabView } from "tns-core-modules/ui/tab-view";
 })
 export class HomeComponent implements OnInit {
 
+  tabSelectedIndex: number;
+  
   constructor() { }
 
   ngOnInit() {

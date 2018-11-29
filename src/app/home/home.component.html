@@ -1,4 +1,4 @@
-<TabView id="tabViewContainer">
+<TabView id="tabViewContainer" [(ngModel)]="tabSelectedIndex">
     <StackLayout *tabItem="{ title: 'LIST' }">
         <StackLayout>
             <ns-items></ns-items>
